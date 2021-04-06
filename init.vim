@@ -4,10 +4,6 @@
 "██║██║╚████║██║░░░██║░░░░░░░╚████╔╝░██║██║╚██╔╝██║
 "██║██║░╚███║██║░░░██║░░░██╗░░╚██╔╝░░██║██║░╚═╝░██║ 
 "╚═╝╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝
-"𝕓𝕪 𝕁𝕠𝕒𝕢𝕦𝕚𝕟 𝕍𝕒𝕣𝕖𝕝𝕒 𝕐𝕋               
-"https://www.youtube.com/channel/UCw1Ipy5_P1OL0zUJMfYC7-A					    
-
-"---------------------------------vim config---------------------------- 
 syntax on 
 set number 
 set mouse=a
@@ -36,7 +32,6 @@ xnoremap J :move '>+1<CR>gv-gv
 vnoremap < <gv
 vnoremap > >gv
 
-"-------------------------------Sources-------------------------------
 "Plugins
 call plug#begin('~/.vim/plugged')
 " Temas
@@ -88,22 +83,17 @@ Plug 'psliwka/vim-smoothie'
 
 "_____________________________
 call plug#end()
-"--------------------------------Plugins Config--------------------------------------------
 "█▀▀ █▀█ █▀▀ ▄▄ █░█ █ █▀▄▀█
 "█▄▄ █▄█ █▄▄ ░░ ▀▄▀ █ █░▀░█
 
-" TextEdit might fail if hidden is not set.
+
 set hidden
 
-" Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
 
-" Give more space for displaying messages.
 set cmdheight=2
 
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
 set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
@@ -118,9 +108,6 @@ else
   set signcolumn=yes
 endif
 
-" Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -375,4 +362,3 @@ colorscheme gruvbox
 "Close tags automatically
 "Cerrar tags automaticamente
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml, *.jsx, *.js'
-"-----------------------------------------------------------------
